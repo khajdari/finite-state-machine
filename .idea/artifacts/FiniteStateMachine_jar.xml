@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FiniteStateMachine:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FiniteStateMachine_jar</output-path>
+    <root id="archive" name="FiniteStateMachine.jar">
+      <element id="module-output" name="FiniteStateMachine" />
+    </root>
+  </artifact>
+</component>
