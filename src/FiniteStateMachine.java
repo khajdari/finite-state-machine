@@ -28,12 +28,15 @@ public class FiniteStateMachine {
         System.out.println("Enter word to check \n Type '/quit' or '/q' to quit");
         String input = scanner.next();
         try {
-            if (checkWord(input))
+            if (checkWord(input)) {
                 System.out.println("Word is part of language");
-            else if (input.equals("/quit") || input.equals("/q"))
+            }
+            else if (input.equals("/quit") || input.equals("/q")) {
                 System.exit(0);
-            else
+            }
+            else {
                 System.out.println("Word is not part of language");
+            }
         } catch (NullPointerException e) {
             e.printStackTrace();
             System.out.println("Error - no word entered");
@@ -56,10 +59,12 @@ public class FiniteStateMachine {
 
     public void changeState(char c) {
         // Check if/how the state changes, depending on current char and current state
-        if (c == 'b' && currentState != 2)
+        if (c == 'b' && currentState != 2) {
             currentState++;
-        else if (c == 'b')
+        }
+        else if (c == 'b') {
             currentState = 1;
+        }
     }
 
 }
