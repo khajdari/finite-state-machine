@@ -21,8 +21,8 @@ public class FiniteStateMachine {
     }
 
     public void startFSM() {
-        currentState = startState;
         // resets current state to startState
+        currentState = startState;
 
         // Starts the console interface
         System.out.println("Enter word to check \n Type '/quit' or '/q' to quit");
@@ -50,6 +50,7 @@ public class FiniteStateMachine {
 
         // Checks if currentState is any of the end states
         return IntStream.of(endStates).anyMatch(x -> x == currentState);
+
 
     }
 
